@@ -1,18 +1,19 @@
 #include <stdio.h>
+
+void area(float a, float b){
+    float area = (a * b);
+    printf("Área igual: %.2f\n",area);
+}
 int main(int argc, char const *argv[])
 {
     /* code */
-    float b, h, area;
+    float base, altura;
+    printf("Digite o valor da base: ");
+    scanf("%f", &base);
 
-    printf("\nDigite o valor da base: ");
-    scanf("%f",&b);
+    printf("Digite o valor da altura: ");
+    scanf("%f",&altura);
 
-    printf("\nDigite o valor da altura: ");
-    scanf("%f",&h);
-
-    area = (b * h)/2;
-
-    printf("\nÁrea = %f\n",area);
-
+    area(base,altura);
     return 0;
 }

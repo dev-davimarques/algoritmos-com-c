@@ -1,19 +1,20 @@
 #include <stdio.h>
 
+void perimetro(float a, float b){
+    float peri = 2 * (a + b);
+    printf("Área igual: %.2f\n",peri);
+}
 int main(int argc, char const *argv[])
 {
     /* code */
-    int a, b, c, p;
-    printf("Digite o valor de a: ");
-    scanf("%d",&a);
-    printf("\nDigite o valor de b: ");
-    scanf("%d", &b);
-    printf("\nDigite o valor de c: ");
-    scanf("%d",&c);
+    float base, altura;
+    printf("Digite o valor da base: ");
+    scanf("%f", &base);
 
-    p = a + b + c;
+    printf("Digite o valor da altura: ");
+    scanf("%f",&altura);
 
-    printf("Perímetro: %d\n",p);
-
+    perimetro(base,altura);
+    
     return 0;
 }

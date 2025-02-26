@@ -1,27 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void calculate(float x, float y){
+  float soma = x + y;
+  printf("Soma: %.2f\n",soma);
+  float sub = x - y;
+  printf("Subtração: %.2f\n",sub);
+  float mult = x * y;
+  printf("Multiplicação: %.2f\n",mult);
+  float div = x / y;
+  printf("Divisão: %.2f\n",div);
+}
+
 int main (void)
 {
-  //declaração de variáveis do tipo inteiro
-  float a, b, soma, sub, div, mult;
+  float num1, num2;
+
+  printf("Digite o primeiro valor: ");
+  scanf("%f",&num1);
+
+  printf("Digite o segundo valor: ");
+  scanf("%f",&num2);
+
+  calculate(num1, num2);
   
-  printf("Digite um numero inteiro: ");
-  scanf("%f", &a); //recebe um inteiro e armazena na variável a
-  
-  printf("Digite um numero inteiro: ");
-  scanf("%f", &b); //recebe um inteiro e armazena na variável b
-  soma = a + b;
-  sub = a - b;
-  div = a / b;
-  mult = a * b;
-  //Efetua adição de a com b e armazena na variável soma
-  
-  printf("O valor da soma = %f\n", soma); //Mostra mensagem com o resultado
-  printf("O valor da subtração = %f\n", sub); //Mostra mensagem com o resultado
-  printf("O valor da divisão = %f\n", div); //Mostra mensagem com o resultado
-  printf("O valor da multiplicação = %f\n", mult); //Mostra mensagem com o resultado
-  
-//   system ("pause");
   return(0);
 }
