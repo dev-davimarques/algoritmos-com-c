@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Verificar se está correto
+
 int main(int argc, char const *argv[])
 {
     int matriz[5][5] = {{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5}};
